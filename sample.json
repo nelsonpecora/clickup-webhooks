@@ -1,0 +1,136 @@
+{
+  "id": "0190ecac-f2da-4325-a15a-9a85b1b02cc0",
+  "trigger_id": "74b97e43-fce7-4f52-9bcd-76e6aebcf77b",
+  "date": "2021-03-15T18:38:10.544Z",
+  "payload": {
+    "id": "pv5tdx",
+    "custom_id": null,
+    "name": "Correspond Schedule time with Tara to talk about Budget and Runtime",
+    "text_content": null,
+    "description": null,
+    "status": {
+      "id": "p6312124_Xa5bS4aN",
+      "status": "not started",
+      "color": "#d3d3d3",
+      "orderindex": 0,
+      "type": "open"
+    },
+    "orderindex": "1.00000000000000000000000000000000",
+    "date_created": "1615833488364",
+    "date_updated": "1615833488364",
+    "date_closed": null,
+    "archived": false,
+    "creator": {
+      "id": 4322628,
+      "username": "Levbert Leger",
+      "color": "#202020",
+      "email": "levbert@rooksdm.com",
+      "profilePicture": null
+    },
+    "assignees": [],
+    "watchers": [
+      {
+        "id": 4322628,
+        "username": "Levbert Leger",
+        "color": "#202020",
+        "initials": "LL",
+        "email": "levbert@rooksdm.com",
+        "profilePicture": null
+      }
+    ],
+    "checklists": [],
+    "tags": [],
+    "parent": "pt4y3x",
+    "priority": null,
+    "due_date": null,
+    "start_date": null,
+    "points": null,
+    "time_estimate": null,
+    "custom_fields": [
+      {
+        "id": "5a62d690-1753-4aca-9e64-6c97a8c91681",
+        "name": "Request Type",
+        "type": "drop_down",
+        "type_config": {
+          "default": 0,
+          "placeholder": null,
+          "new_drop_down": true,
+          "options": [
+            {
+              "id": "20a37c9e-0edd-463f-8104-c5ad7fe61586",
+              "name": "Maintenance",
+              "color": null,
+              "orderindex": 0
+            },
+            {
+              "id": "a1a5ca8f-ea9d-423f-b7d2-1e7c23c4e571",
+              "name": "Enhancement",
+              "color": null,
+              "orderindex": 1
+            },
+            {
+              "id": "fc00d113-4bf1-4e5b-99c1-abdcc299a84e",
+              "name": "Other",
+              "color": null,
+              "orderindex": 2
+            }
+          ]
+        },
+        "date_created": "1615685453046",
+        "hide_from_guests": false,
+        "required": false
+      },
+      {
+        "id": "0f6f4bc0-8783-4e20-acec-09b634be4a44",
+        "name": "Requestor Email",
+        "type": "email",
+        "type_config": {},
+        "date_created": "1615685549083",
+        "hide_from_guests": false,
+        "required": false
+      },
+      {
+        "id": "d49e7e6b-77ef-4f2a-a8e0-be7dab39d7ce",
+        "name": "Requestor Name",
+        "type": "short_text",
+        "type_config": {},
+        "date_created": "1615685622564",
+        "hide_from_guests": false,
+        "required": false
+      },
+      {
+        "id": "d1e861d8-e0a9-41a0-9e47-a4f23ca2ba89",
+        "name": "Website",
+        "type": "url",
+        "type_config": {},
+        "date_created": "1615500171341",
+        "hide_from_guests": false,
+        "required": false
+      }
+    ],
+    "dependencies": [],
+    "linked_tasks": [],
+    "team_id": "2266061",
+    "url": "https://app.clickup.com/t/pv5tdx",
+    "list": {
+      "id": "67278302",
+      "name": "Enhancements",
+      "access": true
+    },
+    "project": {
+      "id": "31701144",
+      "name": "Consulting",
+      "hidden": false,
+      "access": true
+    },
+    "folder": {
+      "id": "31701144",
+      "name": "Consulting",
+      "hidden": false,
+      "access": true
+    },
+    "space": {
+      "id": "6312124"
+    }
+  }
+}
