@@ -45,6 +45,24 @@ export interface Task {
   folder: ProjectOrFolder;
   space: Space;
 }
+// PartialTask is the interface we send when updating tasks. Although
+// it is implemented as a PUT in ClickUp's API, we only send partial values
+// (the properties we want to update). To remove or unset a field, explicitly
+// pass it in here as `null`.
+export interface PartialTask {
+  name?: string;
+  text_content?: null;
+  description?: null;
+  status?: Status;
+  orderindex?: string;
+  archived?: boolean;
+  tags?: null[] | null;
+  priority?: null;
+  due_date?: null;
+  start_date?: null;
+  points?: null;
+  time_estimate?: null;
+}
 export interface Status {
   id: string;
   status: string;

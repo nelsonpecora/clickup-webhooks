@@ -1,5 +1,5 @@
 import { HttpService, Injectable } from '@nestjs/common';
-import { Task } from './interfaces/Task';
+import { Task, PartialTask } from './interfaces/Task';
 import { AxiosResponse } from 'axios';
 import { ConfigService } from '@nestjs/config';
 
@@ -28,9 +28,11 @@ export class AppService {
       return createdTask.data;
     }
   }
-  async getTask(taskId: string) {
+  async getTask(taskId: string, includeSubtasks?: boolean) {
+    const queryParams = includeSubtasks ? '?include_subtasks=true' : '';
+
     return this.httpService
-      .get(`${this.clickUpBaseUrl}/task/${taskId}/`, {
+      .get(`${this.clickUpBaseUrl}/task/${taskId}/${queryParams}`, {
         headers: {
           Authorization: `${this.apitoken}`,
         },
@@ -63,6 +65,19 @@ export class AppService {
     return this.httpService
       .post(
         `${this.clickUpBaseUrl}/list/${this.correspondanceListId}/task/`,
+        task,
+        {
+          headers: {
+            Authorization: `${this.apitoken}`,
+          },
+        },
+      )
+      .toPromise();
+  }
+  updateTask(taskId: string, task: PartialTask): Promise<AxiosResponse<Task>> {
+    return this.httpService
+      .put(
+        `${this.clickUpBaseUrl}/task/${taskId}`,
         task,
         {
           headers: {
